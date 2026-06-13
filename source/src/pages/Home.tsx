@@ -132,8 +132,8 @@ export default function Home() {
     <section
       className="relative flex flex-col items-center justify-center text-center"
       style={{
-        minHeight: '70vh',
-        padding: '96px 24px 64px',
+        minHeight: '46vh',
+        padding: '56px 24px 56px',
         backgroundColor: '#0A0E1A',
         backgroundImage: `url(/singularity-grid.svg)`,
         backgroundSize: 'cover',
@@ -210,45 +210,20 @@ export default function Home() {
           </span>
         </motion.div>
 
-        {/* Main Title */}
-        <motion.h1
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontWeight: 300,
-            fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
-            letterSpacing: '-0.03em',
-            lineHeight: 1.1,
-            color: '#F1F5F9',
-          }}
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease }}
-        >
-          VNC ICU{' '}
-          <motion.span
-            style={{ color: '#0D9488' }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
-          >
-            Singularity
-          </motion.span>
-        </motion.h1>
-
         {/* Subtitle */}
         <motion.p
           style={{
             fontFamily: "'Inter', sans-serif",
-            fontWeight: 400,
-            fontSize: '1.125rem',
-            lineHeight: 1.6,
-            color: '#94A3B8',
-            maxWidth: '640px',
-            marginTop: '20px',
+            fontWeight: 300,
+            fontSize: 'clamp(1.375rem, 2.6vw, 1.875rem)',
+            lineHeight: 1.4,
+            color: '#E2E8F0',
+            maxWidth: '720px',
+            marginTop: '4px',
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.9, ease }}
+          transition={{ duration: 0.5, delay: 0.5, ease }}
         >
           An On-Premises AI Operating System for Clinical Operations Governance
         </motion.p>
