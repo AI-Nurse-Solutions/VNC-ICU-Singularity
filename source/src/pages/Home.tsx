@@ -2026,6 +2026,19 @@ export default function Home() {
   /* ══════ RENDER ══════ */
   return (
     <>
+      {/* Masthead banner */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease }}
+        style={{ backgroundColor: '#0A0E1A', borderBottom: '1px solid #1E293B', lineHeight: 0 }}
+      >
+        <img
+          src="./icu-singularity-banner.jpg"
+          alt="The ICU Singularity — where critical care meets exponential intelligence"
+          style={{ display: 'block', width: '100%', height: 'auto' }}
+        />
+      </motion.div>
       <HeroSection />
       <StatusSection />
       <BedsideSection />
