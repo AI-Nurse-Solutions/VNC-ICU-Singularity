@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { CalendarClock, Stethoscope, BrainCircuit } from 'lucide-react';
+import { CalendarClock, Stethoscope, BrainCircuit, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -117,6 +117,21 @@ export default function Navbar() {
           >
             <BrainCircuit size={12} />
             Market Intel
+          </button>
+          <button
+            onClick={() => navigate('/strategic-case')}
+            className="px-3 py-1 rounded transition-all flex items-center gap-1"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.75rem',
+              fontWeight: 600,
+              color: '#2DD4BF',
+              backgroundColor: 'rgba(13, 148, 136, 0.12)',
+              border: '1px solid rgba(13, 148, 136, 0.3)',
+            }}
+          >
+            <Award size={12} />
+            Strategic Case
           </button>
         </div>
       )}

@@ -155,6 +155,34 @@ export default function Home() {
       />
 
       <div className="relative z-10 flex flex-col items-center" style={{ maxWidth: '1200px' }}>
+        {/* Innovation Challenge CTA — front and center */}
+        <motion.button
+          onClick={() => navigate('/strategic-case')}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15, ease }}
+          whileHover={{ scale: 1.03, boxShadow: '0 0 34px rgba(13,148,136,0.45)' }}
+          className="flex items-center gap-2"
+          style={{
+            padding: '10px 20px',
+            borderRadius: '9999px',
+            marginBottom: '20px',
+            cursor: 'pointer',
+            border: '1px solid rgba(13,148,136,0.5)',
+            background: 'rgba(13,148,136,0.12)',
+            boxShadow: '0 0 24px rgba(13,148,136,0.28)',
+            fontFamily: "'Inter', sans-serif",
+          }}
+        >
+          <span style={{ fontWeight: 600, fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#2DD4BF' }}>
+            Sutter Health Innovation Challenge 2026
+          </span>
+          <span style={{ width: '1px', height: '14px', backgroundColor: 'rgba(45,212,191,0.4)' }} />
+          <span style={{ fontWeight: 500, fontSize: '0.8125rem', color: '#F1F5F9' }}>
+            Read the Strategic Case
+          </span>
+          <ChevronRight size={15} style={{ color: '#2DD4BF' }} />
+        </motion.button>
         {/* Unit Badge */}
         <motion.div
           style={{

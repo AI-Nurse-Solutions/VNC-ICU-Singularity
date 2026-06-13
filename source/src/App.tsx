@@ -5,6 +5,7 @@ import Credentials from './pages/Credentials'
 import NurseSimulation from './pages/NurseSimulation'
 import MarketIntelligence from './pages/MarketIntelligence'
 import GovernanceCharter from './pages/GovernanceCharter'
+import StrategicCase from './pages/StrategicCase'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/nurse-simulation" element={<NurseSimulation />} />
       <Route path="/market-intelligence" element={<MarketIntelligence />} />
       <Route path="/governance-charter" element={<GovernanceCharter />} />
+      <Route path="/strategic-case" element={<StrategicCase />} />
     </Routes>
   )
 }
