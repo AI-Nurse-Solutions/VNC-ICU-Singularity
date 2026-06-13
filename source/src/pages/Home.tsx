@@ -797,7 +797,7 @@ export default function Home() {
       { borderColor: '#06B6D4', label: 'SCHEDULING CYCLE TIME', value: 4.2, suffix: ' hours', trendUp: false, trendVal: '-32%', trendColor: '#10B981', subtext: 'Request to confirmed assignment' },
       { borderColor: '#3B82F6', label: 'ONBOARDING TIME-TO-COMPETENCY', value: 18, suffix: ' days', trendUp: false, trendVal: '-22%', trendColor: '#10B981', subtext: 'Days from hire to competency sign-off' },
       { borderColor: '#F59E0B', label: 'OVERRIDE & ERROR RATES', valueStr: '0.3%', trendUp: true, trendVal: '+0.1%', trendColor: '#F59E0B', subtext: 'Human overrides and system errors' },
-      { borderColor: '#10B981', label: 'STAFF TRUST SCORE', value: 4.6, suffix: '/5.0', trendUp: true, trendVal: '+0.3', trendColor: '#10B981', subtext: 'Zero privacy incidents to date', badge: 'ZERO PRIVACY INCIDENTS' },
+      { borderColor: '#10B981', label: 'STAFF TRUST SCORE', value: 4.6, suffix: '/5.0', trendUp: true, trendVal: '+0.3', trendColor: '#10B981', subtext: 'Privacy-incident-free by design', badge: 'PRIVACY BY DESIGN' },
     ];
 
     return (
@@ -851,7 +851,7 @@ export default function Home() {
                 marginTop: '12px',
               }}
             >
-              Every metric is designed to measure time returned to the bedside and trust maintained in the system.
+              Every metric is designed to measure time returned to the bedside and trust maintained in the system. Figures shown are illustrative pilot targets for the reference unit.
             </p>
           </motion.div>
 

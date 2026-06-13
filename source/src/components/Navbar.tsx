@@ -161,7 +161,7 @@ export default function Navbar() {
             color: '#64748B',
           }}
         >
-          Sutter Health
+          Built for Sutter Health
         </span>
         {/* Status pill */}
         <motion.div

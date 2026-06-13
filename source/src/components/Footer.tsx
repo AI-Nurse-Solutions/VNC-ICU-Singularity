@@ -55,7 +55,7 @@ export default function Footer() {
             textAlign: 'center',
           }}
         >
-          Sutter Health | 44-Bed High Acuity Medical Surgical ICU | 200 Nurses
+          Built for Sutter Health | 44-Bed High Acuity Medical Surgical ICU | 200 Nurses
         </span>
 
         {/* Right */}
@@ -67,7 +67,7 @@ export default function Footer() {
             color: '#64748B',
           }}
         >
-          v1.0.0-beta | On-Premises
+          Prototype · On-Premises
         </span>
       </motion.div>
 
@@ -90,7 +90,7 @@ export default function Footer() {
               textAlign: 'center',
             }}
           >
-            No patient-identifiable information is stored, processed, or displayed in this system. All clinical data is pseudonymized per HIPAA requirements.
+            No patient-identifiable information is stored, processed, or displayed in this system. All clinical data is pseudonymized per HIPAA requirements. Proposal and working prototype for the Sutter Health Innovation Challenge 2026 — figures shown are illustrative pilot targets.
           </span>
         </div>
       </div>
