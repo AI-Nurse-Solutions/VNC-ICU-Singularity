@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --bg-primary: #0A0E1A;
+    --bg-secondary: #111827;
+    --bg-tertiary: #1A2332;
+    --bg-input: #0D1117;
+    --border-subtle: #1E293B;
+    --border-active: #334155;
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --text-inverse: #0A0E1A;
+
+    /* Clinical Accent Colors */
+    --clinical-teal: #0D9488;
+    --clinical-cyan: #06B6D4;
+    --clinical-blue: #3B82F6;
+    --pulse-glow: rgba(13, 148, 136, 0.15);
+
+    /* Zone Governance Colors */
+    --zone-green: #10B981;
+    --zone-green-dim: rgba(16, 185, 129, 0.12);
+    --zone-yellow: #F59E0B;
+    --zone-yellow-dim: rgba(245, 158, 11, 0.12);
+    --zone-red: #EF4444;
+    --zone-red-dim: rgba(239, 68, 68, 0.12);
+
+    /* Status & Data Visualization */
+    --status-online: #10B981;
+    --status-warning: #F59E0B;
+    --status-critical: #EF4444;
+    --status-offline: #64748B;
+    --chart-line-1: #0D9488;
+    --chart-line-2: #06B6D4;
+    --chart-line-3: #3B82F6;
+    --chart-grid: #1E293B;
+
+    /* Spacing Tokens */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* shadcn compatibility */
+    --background: 222 47% 7%;
+    --foreground: 210 40% 96%;
+    --card: 217 33% 11%;
+    --card-foreground: 210 40% 96%;
+    --popover: 217 33% 11%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 174 84% 29%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 33% 11%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 16% 57%;
+    --accent: 174 84% 29%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 10%;
+    --ring: 174 84% 29%;
+    --radius: 0.625rem;
+  }
+
+  * {
+    @apply border-[#1E293B];
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.3);
+  }
+}
+
+@keyframes pulse-glow-yellow {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+  }
+}
+
+@keyframes pulse-glow-red {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(239, 68, 68, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.3);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.9);
+  }
+}
+
+@keyframes line-draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
